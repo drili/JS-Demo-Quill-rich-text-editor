@@ -22,11 +22,22 @@
         <p><br></p>
     </div>
 
+    <div id="editor2">
+        
+    </div>
+
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
     <script>
         var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+
+        var html_data = '<h1>Lorem ipsum dolor sit amet.</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat amet corporis soluta quia est distinctio culpa. Vero quidem libero delectus tempora eos nemo veniam, ipsa at aperiam quas aspernatur culpa sunt nobis tenetur, similique dolorum dolore et tempore excepturi! Unde officiis ullam architecto tempore reiciendis. Aspernatur, optio libero perferendis architecto, quasi unde hic distinctio necessitatibus quisquam odit minima obcaecati nobis! Voluptas, nulla inventore! Beatae officia quam inventore, tempora ab id illo quo incidunt, laudantium iure corrupti eius possimus libero molestiae at quis ipsum saepe magnam. Repellendus voluptate placeat eveniet enim facere! Deserunt assumenda dolores maiores quo architecto. Consectetur, aspernatur.</p>';
+
+        document.querySelector("#editor2").innerHTML = html_data;
+        var quill = new Quill('#editor2', {
             theme: 'snow'
         });
     </script>
